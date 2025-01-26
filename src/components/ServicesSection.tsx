@@ -10,30 +10,31 @@ import { DotPattern } from "@/components/ui/dot-pattern";
 gsap.registerPlugin(ScrollTrigger);
 
 export function ServicesSection() {
-  const cardsRef = useRef<HTMLDivElement | null>(null);
+  const sectionRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    if (cardsRef.current) {
+    if (sectionRef.current) {
       gsap.fromTo(
-        cardsRef.current.children,
+        sectionRef.current,
         {
           opacity: 0,
-          y: 50,
-          scale: 0.95,
+          y: 100,
+          scale: 0.9,
+          rotation: 10,
         },
         {
           opacity: 1,
           y: 0,
           scale: 1,
-          duration: 1,
+          rotation: 0,
+          duration: 1.5,
           ease: "power4.out",
-          stagger: 0.2, // Adds a staggered effect to reveal cards one by one
           scrollTrigger: {
-            trigger: cardsRef.current,
-            start: "top 80%", // Trigger when the cards come into view
-            end: "top 30%",
-            toggleActions: "play none none reverse", // Animation plays on scroll down, reverses on scroll up
-            markers: false, // Optional: Set to true to see the scroll trigger markers
+            trigger: sectionRef.current,
+            start: "top 80%", // Trigger when the section enters 80% of the viewport
+            end: "top 30%", // End when the section reaches 30% of the viewport
+            toggleActions: "play none none reverse", // Play on scroll down, reverse on scroll up
+            markers: false, // Optional: Set to true if you want to see the start and end markers
           },
         }
       );
@@ -42,6 +43,7 @@ export function ServicesSection() {
 
   return (
     <div
+      ref={sectionRef}
       className="max-w-7xl relative mx-auto py-20 md:py-20 px-4 w-full left-0 top-0"
     >
       <h1 className="text-2xl md:text-6xl font-bold dark:text-[#52e500]">
@@ -50,9 +52,7 @@ export function ServicesSection() {
       <p className="max-w-2xl text-base md:text-xl mt-2 dark:text-white">
         We Provide
       </p>
-      <div ref={cardsRef}>
-        <HoverEffect className="max-w-5xl mx-auto px-8" items={projects} />
-      </div>
+      <HoverEffect className="max-w-5xl mx-auto px-8" items={projects} />
       <DotPattern
         className={cn(
           "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]"
