@@ -1,7 +1,5 @@
 # 🚀 Agentclan Frontend  
 
-Agentclan Frontend is a **frontend-only** web application built with **Next.js**, designed for a modern and optimized user experience.  
-
 ---
 
 ## 📌 Features  
