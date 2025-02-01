@@ -49,7 +49,7 @@ export function HeroSection() {
       </div>
       
       {/* Header Section */}
-      <h1 className="z-10 text-center sm:text-left text-4xl sm:text-6xl md:text-7xl lg:text-9xl xl:text-7~xl font-bold tracking-tight text-white font-poppins hero-text">
+      <h1 className="z-10 text-center sm:text-left text-4xl sm:text-6xl md:text-7xl lg:text-7xl  xl:text-7xl font-bold tracking-tight text-white font-poppins hero-text">
         Agents Assemble
       </h1>
 
