@@ -9,7 +9,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
     return (
-        <div >
+        <div className="relative flex justify-center items-center mb-12 px-4 sm:px-6 md:px-8 lg:px-10 overflow-clip">
             <Navbar />
                 {children}
            

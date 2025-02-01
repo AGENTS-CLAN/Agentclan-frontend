@@ -37,17 +37,14 @@ export function BookCall() {
         </div>
       </div>
 
-      {/* Right Section (Calendar) */}
-     <div className="flex-1 flex justify-center px-4 border border-[#424141] rounded-xl bg-[#322d2d65] items-center h-full ">
-  <div className="w-full max-w-md">
+
     <Calendar
       mode="single"
       selected={date}
       onSelect={setDate}
       className="rounded-md shadow-lg w-full h-full"
     />
-  </div>
-</div>
+
 
     </div>
   );

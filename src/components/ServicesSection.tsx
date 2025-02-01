@@ -1,50 +1,17 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { cn } from "@/lib/utils";
+import { useRef } from "react";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { DotPattern } from "@/components/ui/dot-pattern";
-
-gsap.registerPlugin(ScrollTrigger);
+import { cn } from "@/lib/utils";
 
 export function ServicesSection() {
   const sectionRef = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
-    if (sectionRef.current) {
-      gsap.fromTo(
-        sectionRef.current,
-        {
-          opacity: 0,
-          y: 100,
-          scale: 0.9,
-          rotation: 10,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          scale: 1,
-          rotation: 0,
-          duration: 1.5,
-          ease: "power4.out",
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 80%", // Trigger when the section enters 80% of the viewport
-            end: "top 30%", // End when the section reaches 30% of the viewport
-            toggleActions: "play none none reverse", // Play on scroll down, reverse on scroll up
-            markers: false, // Optional: Set to true if you want to see the start and end markers
-          },
-        }
-      );
-    }
-  }, []);
-
   return (
     <div
       ref={sectionRef}
-      className="max-w-7xl relative mx-auto py-20 md:py-20 px-4 w-full left-0 top-0"
+      className="max-w-7xl relative mx-auto py-20 md:py-20 px-4 w-full left-0 top-0 opacity-100 transform scale-100 rotate-0 transition-all duration-1500 ease-out"
     >
       <h1 className="text-2xl md:text-6xl font-bold dark:text-[#52e500]">
         Services

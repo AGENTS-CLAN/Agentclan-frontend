@@ -115,7 +115,4 @@ h1 {
     font-size: 3.75rem; /* Equivalent to text-6xl */
   }
 }
-p {
-  word-spacing: 3px; /* Adds space between words */
-  line-height: 1.6; /* Adds space between lines */
-}
+
