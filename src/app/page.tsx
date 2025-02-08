@@ -1,14 +1,14 @@
 "use client";
-import { GalarySection } from "@/components/GalarySection";
+import { GalarySection } from "@/app/home/GalarySection";
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import {ServicesSection} from "@/components/ServicesSection";
-import { HeroSection } from "@/components/HeroSection";
-import { AboutSection } from "@/components/AboutSection";
-import TestimonialSection from "@/components/TestimonialSection";
-import {CoreTeam} from "@/components/CoreTeam";
-import {BookCall} from "@/components/BookCall";
-import { PremiumPartners } from "@/components/PremiumPartner";
+import {ServicesSection} from "@/app/home/ServicesSection";
+import { HeroSection } from "@/app/home/HeroSection";
+import { AboutSection } from "@/app/home/AboutSection";
+import TestimonialSection from "@/app/home/TestimonialSection";
+import {CoreTeam} from "@/app/home/CoreTeam";
+import {BookCall} from "@/app/home/BookCall";
+import { PremiumPartners } from "@/app/home/PremiumPartner";
 
   
 export default function Home() {

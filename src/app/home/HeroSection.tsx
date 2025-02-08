@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ColourfulText } from "@/components/ui/colourful-text";
-import { RippleButton } from "./ui/ripple-button";
+import { RippleButton } from "../../components/ui/ripple-button";
 import Image from "next/image";
 
 export function HeroSection() {

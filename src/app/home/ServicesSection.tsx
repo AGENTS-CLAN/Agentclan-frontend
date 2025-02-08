@@ -28,42 +28,41 @@ export function ServicesSection() {
     </div>
   );
 }
-
 export const projects = [
   {
-    title: "Stripe",
+    title: "Marketing",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: "/services",
+      "Providing influence marketing, content marketing, lead generation, social media management, and analytics.",
+    link: "/services/Marketing",
   },
   {
-    title: "Netflix",
+    title: "Community",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+      "Offering PR, referral campaigns, airdrop campaigns, community management, and bot deployment with analytics.",
+    link: "/services/community",
   },
   {
-    title: "Google",
+    title: "Events",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+      "Organizing meetups, hackathons, conferences, roadshows, gaming jams, and institutional events.",
+    link: "/services/events",
   },
   {
-    title: "Meta",
+    title: "Industries",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
+      "Serving gaming, metaverse, crypto, finance, Web-2, telecom, and startups.",
+    link: "/services/industries",
   },
   {
-    title: "Amazon",
+    title: "Incubation",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
+      "Providing idea incubation and MVP incubation for startups and businesses.",
+    link: "/services/incubation",
   },
   {
-    title: "Microsoft",
+    title: "Production",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
+      "Specializing in video creation, graphics generation, and on-ground operations.",
+    link: "/services/production",
   },
 ];
