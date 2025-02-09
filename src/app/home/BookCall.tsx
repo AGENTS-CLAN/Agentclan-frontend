@@ -9,7 +9,7 @@ export function BookCall() {
   return (
     <div className="max-w-7xl mx-auto mb-60 mt-20 w-full flex flex-col md:flex-row px-4   items-center justify-between gap-6 md:gap-12">
       {/* Left Section */}
-      <div className="flex-1 space-y-8 text-center md:text-left">
+      <div className="flex-1 space-y-8 text-center md:text-left" id="calender">
         {/* Intro Text */}
         <h2 className="text-xl font-medium">Want to know more?</h2>
         <h1 className="text-2xl md:text-6xl font-bold dark:text-[#52e500]">

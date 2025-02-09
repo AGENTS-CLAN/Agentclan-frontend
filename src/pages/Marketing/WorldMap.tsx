@@ -6,8 +6,8 @@ export function WorldMapSection() {
   return (
     <div className="py-40 dark:bg-black w-full">
       <div className="max-w-7xl mx-auto text-center">
-        <h1 className="font-bold text-4xl md:text-6xl dark:text-white text-black">
-          Remote{" "}
+        <h1 className="font-bold text-4xl sm:text-6xl dark:text-white text-black">
+          Remote{" "} <br />
           <span className="text-[#52e500] shadow-[#52e500] hover:scale-105 transition-transform">
             {"Connectivity".split("").map((word, idx) => (
               <motion.span

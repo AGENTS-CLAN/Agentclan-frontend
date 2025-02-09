@@ -30,7 +30,7 @@ export function Carousel({ items = 10 }: CarouselProps) {
 
   return (
     <>
-      <div className="max-w-7xl relative mx-auto py-12 px-4 w-full left-0 top-0">
+      <div className="max-w-7xl relative mx-auto py-12 mt-48 px-4 w-full left-0 top-0">
         <h1 className="text-2xl md:text-5xl font-bold dark:text-[#52e500] text-center mb-8">
           Proof of work
         </h1>
@@ -39,7 +39,7 @@ export function Carousel({ items = 10 }: CarouselProps) {
             opts={{
               align: "start",
             }}
-            className="w-full max-w-[95vw] h-[40vh] sm:h-[40vh] lg:h-[40vh] mt-40"
+            className="w-full max-w-[95vw] h-[40vh] sm:h-[40vh] lg:h-[40vh] "
           >
             <CarouselContent>
               {Array.from({ length: items }).map((_, index) => (

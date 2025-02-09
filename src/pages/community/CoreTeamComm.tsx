@@ -10,7 +10,7 @@ export function CoreTeamComm() {
 
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-20 px-4 w-full left-0 top-0">
-      <div className="w-full h-full py-20">
+      <div className="w-full h-full">
         <h1 className="text-2xl md:text-6xl font-bold dark:text-[#52e500]">Core Team</h1>
         <Carousel items={cards} />
       </div>

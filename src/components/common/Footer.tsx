@@ -60,21 +60,7 @@ export default function Footer() {
                             Get our beautiful newsletter straight to your inbox.
                         </h3>
                     </div>
-                    <div className="flex-1 mt-6 md:mt-0">
-                        <form onSubmit={(e) => e.preventDefault()} className="flex items-center gap-x-3 md:justify-end">
-                            <div className="relative">
-                                <input
-                                    type="email"
-                                    required
-                                    placeholder="Enter your email"
-                                    className="w-full pl-12 pr-3 py-2 text-gray-500 bg-white outline-none border focus:border-green-600 shadow-sm rounded-lg"
-                                />
-                            </div>
-                            <button className="block w-auto py-3 px-4 font-medium text-sm text-center text-white bg-green-600 hover:bg-green-500 active:bg-green-700 active:shadow-none rounded-lg shadow">
-                                Subscribe
-                            </button>
-                        </form>
-                    </div>
+                 
                 </div>
                 <div className="flex-1 mt-16 space-y-6 justify-between sm:flex md:space-y-0">
                     {footerNavs.map((item, idx) => (

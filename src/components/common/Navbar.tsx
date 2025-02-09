@@ -12,11 +12,11 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: "Home", href: "/" },
-  { name: "About Us", href: "/services" },
+  { name: "About Us", href: "3" },
   { name: "Industries", href: "#" },
   { name: "Institution", href: "#" },
   { name: "Event Calender", href: "#" },
-  { name: "Book A Call", href: "#" },
+  { name: "Book A Call", href: "#calender" },
 ];
 
 function classNames(...classes: string[]) {
