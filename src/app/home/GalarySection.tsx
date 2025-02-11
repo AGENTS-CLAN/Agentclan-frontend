@@ -3,75 +3,60 @@ import React from "react";
 import { HeroParallax } from "../../components/ui/hero-parallax";
 
 export function GalarySection() {
+
+
   return <HeroParallax products={products} />;
 }
-export const products = [
+const products = [
   {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
-    thumbnail: "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
-  },
-  {
-    title: "Cursor",
-    link: "https://cursor.so",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
-  },
-  {
-    title: "Rogue",
-    link: "https://userogue.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
-  },
 
-  {
-    title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+    thumbnail: "/images/1.jpg",
   },
   {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editrix.png",
-  },
-  {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
-  },
 
-  {
-    title: "Algochurn",
-    link: "https://algochurn.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+    thumbnail: "/images/2.jpg",
   },
   {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
-  },
-  {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
-  },
-  {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
-  },
-  {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
-  },
 
+    thumbnail: "/images/3.jpg",
+  },
+  {
+    
+    thumbnail: "/images/5.jpg",
+  },
+  {
+    
+    thumbnail: "/images/12.jpg",
+  },
+  {
+    
+    thumbnail: "/images/7.jpg",
+  },
+  {
+    
+    thumbnail: "/images/8.jpg",
+  },
+  {
+    
+    thumbnail: "/images/9.jpg",
+  },
+  {
+    
+    thumbnail: "/images/10.jpg",
+  },
+  {
+
+    thumbnail: "/images/11.jpg",
+  }, {
+    
+    thumbnail: "/images/12.jpg",
+  }, {
+    
+    thumbnail: "/images/13.jpg",
+  },
+  {
+
+    thumbnail: "/images/4.jpg",
+  },
 ];
+
