@@ -61,8 +61,7 @@ export function AboutSection() {
             transition={{ duration: 1, delay: 0.4 }}
             className="max-w-2xl text-lg md:text-xl text-gray-600 dark:text-white mt-4"
           >
-            We are a technology-driven company focused on innovation and providing world-class solutions for a better future. With a passion for excellence and a deep commitment to customer satisfaction, we are changing the way businesses operate.
-          </motion.p>
+Agents Clan is a groundbreaking ecosystem that has been diligently crafted to empower young brains. The necessity for tailored platforms that link outstanding talents has never been greater in a world where Web3, Web2 and Ai are evolving at a breakneck pace. By assembling a vibrant group of creatives and founding an environment where ground-breaking concepts can flourish, Agents Clan responds to this need.          </motion.p>
 
           {/* Core Values Section */}
           <motion.h2
