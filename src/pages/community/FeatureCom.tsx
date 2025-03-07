@@ -5,7 +5,7 @@ import {
   IconGift, IconMessageCircle, IconRobot, 
 } from "@tabler/icons-react";
 
-export function FeaturesCom() {
+export default function FeaturesCom() {
   const features = [
     {
       title: "PR Growth",

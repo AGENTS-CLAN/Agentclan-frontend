@@ -3,7 +3,7 @@ import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
 // CoreTeam component to render cards with static content
-export function CoreTeamComm() {
+export default function CoreTeamComm() {
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} /> // Pass static content without interactive behavior
   ));

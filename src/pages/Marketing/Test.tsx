@@ -1,7 +1,7 @@
 import React from "react";
 import { FlipWords } from "@/components/ui/text-flip";
 
-export function Text() {
+export default function Text() {
   const words = ["impactful", "engaging", "powerful", "unforgettable"];
 
   return (

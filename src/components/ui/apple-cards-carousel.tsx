@@ -1,10 +1,8 @@
 "use client";
 import React, {
   useEffect,
-  useRef,
   useState,
   createContext,
-  useContext,
 } from "react";
 import { IconArrowNarrowLeft, IconArrowNarrowRight } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
@@ -20,7 +18,7 @@ interface CarouselProps {
 type Card = {
   src: string;
   category: string;
-  content: React.ReactNode;
+  content?: React.ReactNode;
 };
 
 export const CarouselContext = createContext<{

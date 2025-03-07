@@ -7,7 +7,7 @@ import {
   IconRocket,
 } from "@tabler/icons-react";
 
-export function FeaturesCom() {
+export default function FeaturesCom() {
   const features = [
     {
       title: "GAMING AND METAVERSE",

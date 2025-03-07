@@ -2,7 +2,7 @@
 import WorldMap from "@/components/ui/world-map";
 import { motion } from "motion/react";
 
-export function WorldMapSection() {
+export default function WorldMapSection() {
   return (
     <div className="py-40 dark:bg-black w-full">
       <div className="max-w-7xl mx-auto text-center">

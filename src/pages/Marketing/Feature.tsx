@@ -7,7 +7,7 @@ import {
   IconChartBar,
 } from "@tabler/icons-react";
 
-export function FeaturesSection() {
+export default function FeaturesSection() {
   const features = [
     {
       title: "INFLUENCE MARKETING",

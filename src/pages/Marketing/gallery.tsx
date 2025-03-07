@@ -8,7 +8,7 @@ const images = Array.from({ length: 9 }, (_, i) => {
   return `https://picsum.photos/seed/${i + 1}/${width}/${height}`;
 });
 
-export function Gallery() {
+export default function Gallery() {
   return (
     <>
       <section id="photos" className="max-w-7xl mx-auto mb-[20%]">

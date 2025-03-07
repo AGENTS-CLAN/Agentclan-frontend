@@ -5,7 +5,7 @@ import {
   IconMapPin,
 } from "@tabler/icons-react";
 
-export function FeaturesCom() {
+export default function FeaturesCom() {
   const features = [
     {
       title: "VIDEO CREATION",

@@ -10,7 +10,7 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 
-export function GridEve() {
+export default function GridEve() {
   return (<>
       <div className="max-w-7xl relative mx-auto py-24 px-4 w-full left-0 top-0">
         <h1 className="text-4xl lg:text-5xl md:text-6xl font-bold dark:text-[#52e500]">

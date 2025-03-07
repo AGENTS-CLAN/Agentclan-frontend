@@ -2,7 +2,7 @@ import React from "react";
 // import { cn } from "@/lib/utils";
 import { Spotlight } from "@/components/ui/spotlight";
 
-export function HeroCom() {
+export default function HeroCom() {
   return (
     <div className="h-[20rem] md:h-[50rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Spotlight

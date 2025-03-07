@@ -73,7 +73,7 @@ export const Header = () => {
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-white">
         We don’t just code—we craft masterpieces in pixels and logic. From bold
         ideas to groundbreaking products, we make tech look easy. If it’s
-        innovative, we’re already building it. Presenting Agent Clans' pristine
+        innovative, we’re already building it. Presenting Agent Clans&apos; pristine
         studio which is user-friendly, allowing Agents to produce the desired
         output.
       </p>

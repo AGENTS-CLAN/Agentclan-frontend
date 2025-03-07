@@ -7,7 +7,7 @@ import {
   IconSchool, // For Institutional Collaboration
 } from "@tabler/icons-react";
 
-export function FeaturesEve() {
+export default function FeaturesEve() {
   const features = [
     {
       title: "MEETUPS IN ALL REGIONS:",
