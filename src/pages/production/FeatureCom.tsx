@@ -1,61 +1,48 @@
 import { cn } from "@/lib/utils";
 import {
-  IconAdjustmentsBolt,
-  IconCloud,
-  IconCurrencyDollar,
-  IconEaseInOut,
-  IconHeart,
-  IconHelp,
-  IconRouteAltLeft,
-  IconTerminal2,
+  IconVideo,
+  IconBrush,
+  IconMapPin,
 } from "@tabler/icons-react";
 
 export function FeaturesCom() {
   const features = [
     {
-      title: "PR Growth",
+      title: "VIDEO CREATION",
       description:
-        "Agents Clan ensures your brand’s story gets the attention it deserves. From press coverage to thought-leadership articles, their PR services focus on delivering authentic, memorable messaging that establishes you as a leader in your industry.",
-      icon: <IconTerminal2 />,
+        "At Agents Clan, video production begins with a vision—crafted to engage and resonate. Every detail, from scripting to editing, is meticulously planned to create content that is both informative and memorable. Whether for product launches, community highlights, or technical tutorials, each video is designed to captivate and inspire action. With a seamless blend of technical precision and artistic creativity, high-quality visuals are produced using the latest software and equipment. Every frame is refined, every transition purposeful, and every second impactful. By staying ahead of industry trends, our work not only aligns with the market but sets new standards in innovation and excellence.",
+      icon: <IconVideo />,
     },
     {
-      title: "Referral Campaigns",
+      title: "GRAPHICS GENERATION",
       description:
-        "Agents Clan turns your customers into brand ambassadors through well-designed referral programs. They optimize campaigns with appealing rewards, simplified processes, and robust tracking to ensure success and organic growth.",
-      icon: <IconEaseInOut />,
+        "At Agents Clan, graphics serve as a powerful tool for clear and stylish communication. From branding elements to infographics, each design aligns with the clan’s high standards. Crafted with precision and purpose, our visuals ensure consistency across platforms, enhancing visibility and engagement. Using advanced techniques, we push the boundaries of visual storytelling, creating content that is both impactful and aesthetically refined.",
+      icon: <IconBrush />,
     },
     {
-      title: "Airdrop Campaigns",
+      title: "ON GROUND OPERATIONS",
       description:
-        "Specializing in airdrop campaigns, Agents Clan helps broaden your audience and enhance engagement. By linking token rewards with interactive tasks, they make your campaign exciting and impactful.",
-      icon: <IconCurrencyDollar />,
+        "At Agents Clan, every operation is meticulously executed to create impactful experiences. From logistics management to large-scale event coordination and community outreach, excellence is ensured at every stage. Every detail is carefully planned, transforming tasks into dynamic spectacles that embody the clan’s precision and energy. The goal is simple: to enhance engagement and set new standards for performance.",
+      icon: <IconMapPin />,
     },
-    {
-      title: "Community Management",
-      description: "Agents Clan builds vibrant, engaging communities aligned with your goals. They handle everything from stimulating conversations to organizing events, ensuring your community thrives while fostering teamwork and inclusivity.",
-      icon: <IconCloud />,
-    },
-    {
-      title: "Bot Deployment and Analytics",
-      description: "Agents Clan automates community management by deploying bots to handle repetitive tasks, answer FAQs, and boost productivity 24/7. By combining bot deployment with powerful analytics, they help monitor engagement, user behavior, and campaign performance to maximize growth.",
-      icon: <IconRouteAltLeft />,
-    },
-    // Removed one feature to display only 5
   ];
-  
-  return (<>
-        <div className="max-w-7xl relative mx-auto py-12 px-4 w-full left-0 top-0">
+
+  return (
+    <>
+      <div className="max-w-7xl relative mx-auto py-12 px-4 w-full left-0 top-0">
         <h1 className="text-4xl lg:text-5xl md:text-6xl font-bold dark:text-[#52e500]">
-Extertise Solution</h1>
-</div>
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-8 relative z-10 py-6 max-w-7xl mx-auto">
-      {features.map((feature, index) => (
+          Expertise Solution
+        </h1>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-8 relative z-10 py-6 max-w-7xl mx-auto">
+        {features.map((feature, index) => (
           <Feature key={feature.title} {...feature} index={index} />
         ))}
-    </div>
-        </>
+      </div>
+    </>
   );
 }
+
 
 const Feature = ({
   title,

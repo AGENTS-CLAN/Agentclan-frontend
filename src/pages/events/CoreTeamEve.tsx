@@ -11,7 +11,7 @@ export function CoreTeamEve() {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-20 px-4 w-full left-0 top-0">
       <div className="w-full h-full py-20">
-        <h1 className="text-2xl md:text-6xl font-bold dark:text-[#52e500]">Core Team</h1>
+        <h1 className="text-2xl md:text-6xl font-bold dark:text-[#52e500]">Event Managment Team</h1>
         <Carousel items={cards} />
       </div>
     </div>
@@ -22,27 +22,26 @@ export function CoreTeamEve() {
 const data = [
   {
     category: "Person 1",
-    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/images/person1.jpeg", // Remove extra text and ensure correct path
     content: "", // Static content here
   },
   {
     category: "Person 2",
-    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/images/person2.jpeg", // Remove extra text and ensure correct path
     content: "", // Static content here
   },
   {
     category: "Person 3",
-    src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/images/person3.jpeg", // Remove extra text and ensure correct path
     content: "", // Static content here
   },
   {
     category: "Person 4",
-    src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/images/person4.jpeg", // Remove extra text and ensure correct path
     content: "", // Static content here
   },
   {
     category: "Person 5",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: "", // Static content here
+      src: "/images/person5.jpeg", // Remove extra text and ensure correct pathtatic content here
   },
 ];

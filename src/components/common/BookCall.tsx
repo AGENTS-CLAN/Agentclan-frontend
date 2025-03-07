@@ -1,15 +1,16 @@
 "use client";
 
 import * as React from "react";
-import { Calendar } from "@/components/ui/calendar";
+import { Button } from "@/components/ui/button";
+// import { Calendar } from "@/components/ui/calendar";
 
-export function BookCalleve() {
-  const [date, setDate] = React.useState<Date | undefined>(new Date());
+export function BookCall() {
+  // const [date, setDate] = React.useState<Date | undefined>(new Date());
 
   return (
     <div className="max-w-7xl mx-auto mb-60 mt-20 w-full flex flex-col md:flex-row px-4   items-center justify-between gap-6 md:gap-12">
       {/* Left Section */}
-      <div className="flex-1 space-y-8 text-center md:text-left">
+      <div className="flex-1 space-y-8 text-center md:text-left" id="calender">
         {/* Intro Text */}
         <h2 className="text-xl font-medium">Want to know more?</h2>
         <h1 className="text-2xl md:text-6xl font-bold dark:text-[#52e500]">
@@ -36,14 +37,20 @@ export function BookCalleve() {
           </div>
         </div>
       </div>
-
-
-    <Calendar
+      <Button
+      className="bg-green-600 hover:bg-green-700 text-white text-xl  h-fullfont-bold py-4 px-8 rounded-lg transition-all duration-300"
+      onClick={() => window.open("https://calendly.com/", "_blank")}
+    >
+      Book Now
+    </Button>
+    
+          {/* use this after the integration of the calender for the backend */}
+      {/* <Calendar
       mode="single"
       selected={date}
       onSelect={setDate}
       className="rounded-md shadow-lg w-full h-full"
-    />
+    /> */}
 
 
     </div>

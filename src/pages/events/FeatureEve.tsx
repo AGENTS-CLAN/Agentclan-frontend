@@ -1,61 +1,62 @@
 import { cn } from "@/lib/utils";
 import {
-  IconAdjustmentsBolt,
-  IconCloud,
-  IconCurrencyDollar,
-  IconEaseInOut,
-  IconHeart,
-  IconHelp,
-  IconRouteAltLeft,
-  IconTerminal2,
+  IconUsersGroup, // For Meetups
+  IconCode, // For Hackathons
+  IconMicrophone, // For Conferences
+  IconDeviceGamepad2, // For Roadshows and Game Jams
+  IconSchool, // For Institutional Collaboration
 } from "@tabler/icons-react";
 
 export function FeaturesEve() {
   const features = [
     {
-      title: "PR Growth",
+      title: "MEETUPS IN ALL REGIONS:",
       description:
-        "Agents Clan ensures your brand’s story gets the attention it deserves. From press coverage to thought-leadership articles, their PR services focus on delivering authentic, memorable messaging that establishes you as a leader in your industry.",
-      icon: <IconTerminal2 />,
+        "Agents Clan hosts regional meetups to foster authentic connections among developers, artists, and tech enthusiasts. Designed as inclusive spaces for idea exchange, these gatherings encourage engagement and creativity. By bringing local talent closer to global opportunities, each event transforms conversations into possibilities and connections into initiatives.",
+      icon: <IconUsersGroup />,
     },
     {
-      title: "Referral Campaigns",
+      title: "HACKATHONS",
       description:
-        "Agents Clan turns your customers into brand ambassadors through well-designed referral programs. They optimize campaigns with appealing rewards, simplified processes, and robust tracking to ensure success and organic growth.",
-      icon: <IconEaseInOut />,
+        "At Agents Clan, hackathons are designed as dynamic spaces for innovation, collaboration, and problem-solving. More than just competitions, these events provide participants with the tools, support, and opportunities needed to bring ideas to life. From ideation to execution, every element is crafted to inspire, challenge, and drive real impact.",
+      icon: <IconCode />,
     },
     {
-      title: "Airdrop Campaigns",
+      title: "CONFERENCES",
       description:
-        "Specializing in airdrop campaigns, Agents Clan helps broaden your audience and enhance engagement. By linking token rewards with interactive tasks, they make your campaign exciting and impactful.",
-      icon: <IconCurrencyDollar />,
+        "At Agents Clan, conferences inspire and energize every participant. Featuring keynote speakers, panel discussions, and interactive sessions, they foster insightful dialogue. Whether a seasoned professional or an emerging innovator, attendees gain opportunities to learn, network, and grow. Each interaction transforms traditional conferences into dynamic ecosystems of ideas.",
+      icon: <IconMicrophone />,
     },
     {
-      title: "Community Management",
-      description: "Agents Clan builds vibrant, engaging communities aligned with your goals. They handle everything from stimulating conversations to organizing events, ensuring your community thrives while fostering teamwork and inclusivity.",
-      icon: <IconCloud />,
+      title: "ROADSHOWS AND GAMING JAMS",
+      description:
+        "At Agents Clan, roadshows and game jams bring creativity and technology directly to communities. Through interactive showcases, roadshows introduce new audiences to innovative projects and ideas. Meanwhile, game jams provide a space for creators and coders to collaborate, turning concepts into playable experiences. More than just events, these gatherings inspire engagement, spark innovation, and transform passion into action.",
+      icon: <IconDeviceGamepad2 />,
     },
     {
-      title: "Bot Deployment and Analytics",
-      description: "Agents Clan automates community management by deploying bots to handle repetitive tasks, answer FAQs, and boost productivity 24/7. By combining bot deployment with powerful analytics, they help monitor engagement, user behavior, and campaign performance to maximize growth.",
-      icon: <IconRouteAltLeft />,
+      title: "INSTITUTIONAL COLLABORATION",
+      description:
+        "Agents Clan facilitates impactful collaborations between businesses, academic institutions, and aspiring professionals. Through workshops, seminars, and networking sessions, we create an environment where learning, mentorship, and innovation thrive. Our events bridge academia and industry, fostering connections, inspiring technological advancements, and empowering future talent.",
+      icon: <IconSchool />,
     },
-    // Removed one feature to display only 5
   ];
-  
-  return (<>
-        <div className="max-w-7xl relative mx-auto py-12 px-4 w-full left-0 top-0">
+
+  return (
+    <>
+      <div className="max-w-7xl relative mx-auto py-12 px-4 w-full left-0 top-0">
         <h1 className="text-4xl lg:text-5xl md:text-6xl font-bold dark:text-[#52e500]">
-Extertise Solution</h1>
-</div>
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-8 relative z-10 py-6 max-w-7xl mx-auto">
-      {features.map((feature, index) => (
+          Expertise Solutions
+        </h1>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-8 relative z-10 py-6 max-w-7xl mx-auto">
+        {features.map((feature, index) => (
           <Feature key={feature.title} {...feature} index={index} />
         ))}
-    </div>
-        </>
+      </div>
+    </>
   );
 }
+
 
 const Feature = ({
   title,

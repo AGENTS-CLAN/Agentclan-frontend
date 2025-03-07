@@ -7,7 +7,8 @@ export function WorldMapSection() {
     <div className="py-40 dark:bg-black w-full">
       <div className="max-w-7xl mx-auto text-center">
         <h1 className="font-bold text-4xl sm:text-6xl dark:text-white text-black">
-          Remote{" "} <br />
+        Global
+        {" "} <br />
           <span className="text-[#52e500] shadow-[#52e500] hover:scale-105 transition-transform">
             {"Connectivity".split("").map((word, idx) => (
               <motion.span
@@ -23,9 +24,7 @@ export function WorldMapSection() {
           </span>
         </h1>
         <p className="text-sm md:text-lg text-neutral-400 max-w-2xl mx-auto py-4">
-          Break free from traditional boundaries. Work from anywhere, at the
-          comfort of your own studio apartment. Perfect for Nomads and
-          Travellers.
+        Expand beyond borders and collaborate seamlessly from anywhere. Our services empower businesses worldwide, ensuring smooth communication and efficiency—no matter where you are. Perfect for global teams, digital nomads, and enterprises seeking remote excellence.
         </p>
       </div>
       <WorldMap

@@ -1,59 +1,59 @@
 import { cn } from "@/lib/utils";
 import {
-  IconAdjustmentsBolt,
-  IconCloud,
-  IconCurrencyDollar,
-  IconEaseInOut,
-  IconHeart,
-  IconHelp,
-  IconRouteAltLeft,
-  IconTerminal2,
+  IconUsersGroup,
+  IconArticle,
+  IconUserSearch,
+  IconBrandTwitter,
+  IconChartBar,
 } from "@tabler/icons-react";
 
 export function FeaturesSection() {
   const features = [
     {
-      title: "Built for developers",
+      title: "INFLUENCE MARKETING",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
-      icon: <IconTerminal2 />,
+        "At Agents Clan, we maximize the value of influence by crafting authentic partnerships that leave a lasting impact. More than just connecting influencers and businesses, our strategy amplifies voices through targeted campaigns and niche communities. From viral trends to thought-provoking discussions, every collaboration is designed to shape culture, build trust, and drive action—going beyond mere numbers.",
+      icon: <IconUsersGroup />,
     },
     {
-      title: "Ease of use",
+      title: "CONTENT MARKETING",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
-      icon: <IconEaseInOut />,
+        "At Agents Clan, we craft content that captivates, informs, and inspires. From engaging social media posts to compelling blogs and videos, every piece is designed to enhance visibility, drive engagement, and convert leads into loyal clients. With strategy at its core and creativity at the forefront, our content ensures your brand stands out in a competitive digital world.",
+      icon: <IconArticle />,
     },
     {
-      title: "Pricing like no other",
+      title: "LEAD GENERATION",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
-      icon: <IconCurrencyDollar />,
+        "Agents Clan streamlines your lead generation process by connecting you with potential partners, clients, and customers who align with your goals. Through advanced technology and industry expertise, we ensure a pipeline filled with qualified leads ready to convert. Whether launching a new project or expanding your business, our approach keeps outreach focused, efficient, and effective—building lasting connections for long-term success.",
+      icon: <IconUserSearch />,
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
-      icon: <IconCloud />,
+      title: "SOCIAL MEDIA MANAGEMENT",
+      description:
+        "Agents Clan keeps your brand at the center of conversations. On X (formerly Twitter), we craft engaging threads that build authority, while on Instagram, we ensure your message resonates. From witty posts that grab attention to insightful content that informs and inspires, your voice stays heard.",
+      icon: <IconBrandTwitter />,
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
-      icon: <IconRouteAltLeft />,
+      title: "ANALYTICS",
+      description:
+        "At Agents Clan, we translate numbers into insights. Engagement rates are monitored, audience behavior is analyzed, and high-performing content is identified to refine strategies. Trends are continuously observed to adapt tactics, ensuring data-driven decisions and measurable results. With detailed reports and actionable insights, opportunities are created in a data-driven world.",
+      icon: <IconChartBar />,
     },
-    // Removed one feature to display only 5
   ];
-  
-  return (<>
-        <div className="max-w-7xl relative mx-auto py-12 px-4 w-full left-0 top-0">
+
+  return (
+    <>
+      <div className="max-w-7xl relative mx-auto py-12 px-4 w-full left-0 top-0">
         <h1 className="text-2xl md:text-6xl font-bold dark:text-[#52e500]">
-Extertise Solution</h1>
-</div>
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-8 relative z-10 py-16 max-w-7xl mx-auto">
-      {features.map((feature, index) => (
+          Expertise Solutions
+        </h1>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-8 relative z-10 py-16 max-w-7xl mx-auto">
+        {features.map((feature, index) => (
           <Feature key={feature.title} {...feature} index={index} />
         ))}
-    </div>
-        </>
+      </div>
+    </>
   );
 }
 

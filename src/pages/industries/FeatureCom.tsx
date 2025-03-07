@@ -1,59 +1,59 @@
 import { cn } from "@/lib/utils";
 import {
-  IconAdjustmentsBolt,
-  IconCloud,
-  IconCurrencyDollar,
-  IconEaseInOut,
-  IconHeart,
-  IconHelp,
-  IconRouteAltLeft,
-  IconTerminal2,
+  IconDeviceGamepad2,
+  IconCoin,
+  IconWorld,
+  IconAntennaBars5,
+  IconRocket,
 } from "@tabler/icons-react";
 
 export function FeaturesCom() {
   const features = [
     {
-      title: "PR Growth",
+      title: "GAMING AND METAVERSE",
       description:
-        "Agents Clan ensures your brand’s story gets the attention it deserves. From press coverage to thought-leadership articles, their PR services focus on delivering authentic, memorable messaging that establishes you as a leader in your industry.",
-      icon: <IconTerminal2 />,
+        "Gaming and the metaverse are shaping the next wave of technology. At Agents Clan, immersive experiences are crafted by blending art and technology. From innovative game concepts to virtual world infrastructure, expertise is provided to enhance engagement and growth. Strategies for community building, revenue, and user adoption ensure every project thrives. With Agents Clan, the metaverse is not just joined—it is redefined.",
+      icon: <IconDeviceGamepad2 />,
     },
     {
-      title: "Referral Campaigns",
+      title: "CRYPTO AND FINANCES",
       description:
-        "Agents Clan turns your customers into brand ambassadors through well-designed referral programs. They optimize campaigns with appealing rewards, simplified processes, and robust tracking to ensure success and organic growth.",
-      icon: <IconEaseInOut />,
+        "Stay ahead in the fast-moving world of crypto and finance with Agents Clan. From tokenomics to blockchain integration, we simplify complex concepts, build trust, and drive adoption. Whether launching a crypto asset, developing a finance platform, or exploring Web3, we turn ideas into impact.",
+      icon: <IconCoin />,
     },
     {
-      title: "Airdrop Campaigns",
+      title: "WEB 2",
       description:
-        "Specializing in airdrop campaigns, Agents Clan helps broaden your audience and enhance engagement. By linking token rewards with interactive tasks, they make your campaign exciting and impactful.",
-      icon: <IconCurrencyDollar />,
+        "While Web3 is on the rise, Web2 remains essential. At Agents Clan, we enhance user experience, optimize websites, and refine social media strategies to strengthen digital presence. By bridging Web2 with emerging Web3 technologies, we help businesses stay competitive and future-ready.",
+      icon: <IconWorld />,
     },
     {
-      title: "Community Management",
-      description: "Agents Clan builds vibrant, engaging communities aligned with your goals. They handle everything from stimulating conversations to organizing events, ensuring your community thrives while fostering teamwork and inclusivity.",
-      icon: <IconCloud />,
+      title: "TELECOM",
+      description:
+        "We specialize in enhancing client engagement, optimizing services, and driving innovation in the ever-evolving telecom industry. Through strategic marketing and community-driven solutions, brands connect meaningfully with their audiences. At Agents Clan, telecom is about fostering connections, not just communication.",
+      icon: <IconAntennaBars5 />,
     },
     {
-      title: "Bot Deployment and Analytics",
-      description: "Agents Clan automates community management by deploying bots to handle repetitive tasks, answer FAQs, and boost productivity 24/7. By combining bot deployment with powerful analytics, they help monitor engagement, user behavior, and campaign performance to maximize growth.",
-      icon: <IconRouteAltLeft />,
+      title: "STARTUPS",
+      description:
+        "At Agents Clan, we empower startups by providing specialized support from ideation to execution. Challenges are met with expert guidance, ensuring seamless growth, community building, and brand development. With our resources and expertise, great ideas turn into lasting legacies. Agents Clan isn’t just about business—it’s about shaping the future of technology.",
+      icon: <IconRocket />,
     },
-    // Removed one feature to display only 5
   ];
-  
-  return (<>
-        <div className="max-w-7xl relative mx-auto py-12 px-4 w-full left-0 top-0">
+
+  return (
+    <>
+      <div className="max-w-7xl relative mx-auto py-12 px-4 w-full left-0 top-0">
         <h1 className="text-4xl lg:text-5xl md:text-6xl font-bold dark:text-[#52e500]">
-Extertise Solution</h1>
-</div>
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-8 relative z-10 py-6 max-w-7xl mx-auto">
-      {features.map((feature, index) => (
+          Expertise Solution
+        </h1>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-8 relative z-10 py-6 max-w-7xl mx-auto">
+        {features.map((feature, index) => (
           <Feature key={feature.title} {...feature} index={index} />
         ))}
-    </div>
-        </>
+      </div>
+    </>
   );
 }
 

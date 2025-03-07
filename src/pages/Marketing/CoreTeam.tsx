@@ -3,7 +3,7 @@ import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
 // CoreTeam component to render cards with static content
-export function CoreTeamComm() {
+export function CoreTeam() {
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} /> // Pass static content without interactive behavior
   ));
@@ -11,7 +11,7 @@ export function CoreTeamComm() {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-20 px-4 w-full left-0 top-0">
       <div className="w-full h-full py-20">
-        <h1 className="text-2xl md:text-6xl font-bold dark:text-[#52e500]">Production Team</h1>
+        <h1 className="text-2xl md:text-6xl font-bold dark:text-[#52e500]">Marketing Team</h1>
         <Carousel items={cards} />
       </div>
     </div>

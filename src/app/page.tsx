@@ -7,9 +7,9 @@ import { HeroSection } from "@/app/home/HeroSection";
 import { AboutSection } from "@/app/home/AboutSection";
 import TestimonialSection from "@/app/home/TestimonialSection";
 import {CoreTeam} from "@/app/home/CoreTeam";
-import {BookCall} from "@/app/home/BookCall";
+// import {BookCall} from "@/components/common/BookCall";
 import { PremiumPartners } from "@/app/home/PremiumPartner";
-import Banner from "./home/Banner";
+import BookCallBanner from "./home/Banner";
 
   
 export default function Home() {
@@ -22,8 +22,8 @@ export default function Home() {
     <GalarySection/>
     <ServicesSection/>
     <PremiumPartners/>
-    <Banner/>
-   <BookCall/>
+   {/* <BookCall/> */}
+   <BookCallBanner/>
     <TestimonialSection/>
     <CoreTeam/>
     </div>

@@ -30,7 +30,7 @@ const products = [
   },
   {
     
-    thumbnail: "/images/7.jpg",
+    thumbnail: "/images/14.jpg",
   },
   {
     

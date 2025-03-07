@@ -1,71 +1,81 @@
-import * as React from "react";
-
-import { Card, CardContent } from "@/components/ui/card";
+import React from "react";
+import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import {
-  Carousel as ShadCarousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+  IconArrowWaveRightUp,
+  IconBoxAlignRightFilled,
+  IconBoxAlignTopLeft,
+  IconClipboardCopy,
+  IconFileBroken,
+  IconSignature,
+  IconTableColumn,
+} from "@tabler/icons-react";
 
-interface CarouselProps {
-  items?: number; // Number of items in the carousel
-}
-
-export function CarouselEve({ items = 10 }: CarouselProps) {
-  // Array of placeholder image URLs
-  const images = [
-    "https://optim.tildacdn.one/tild3936-3463-4130-b632-346634653463/-/format/webp/Frame_2085664757.png",
-    "https://optim.tildacdn.one/tild3339-3636-4563-a335-646638613139/-/format/webp/Group_2085664498.png",
-    "https://via.placeholder.com/1200x800?text=Image+3",
-    "https://via.placeholder.com/1200x800?text=Image+4",
-    "https://via.placeholder.com/1200x800?text=Image+5",
-    "https://via.placeholder.com/1200x800?text=Image+6",
-    "https://via.placeholder.com/1200x800?text=Image+7",
-    "https://via.placeholder.com/1200x800?text=Image+8",
-    "https://via.placeholder.com/1200x800?text=Image+9",
-    "https://via.placeholder.com/1200x800?text=Image+0",
-  ];
-
-  return (
-    <>
-      <div className="max-w-7xl relative mx-auto py-12 px-4 w-full left-0 top-0">
-        <h1 className="text-2xl md:text-5xl font-bold dark:text-[#52e500] text-center mb-8">
-          Proof of work
-        </h1>
-        <div className="flex items-center justify-center">
-          <ShadCarousel
-            opts={{
-              align: "start",
-            }}
-            className="w-full max-w-[95vw] h-[40vh] sm:h-[40vh] lg:h-[40vh] mt-40"
-          >
-            <CarouselContent>
-              {Array.from({ length: items }).map((_, index) => (
-                <CarouselItem
-                  key={index}
-                  className="basis-[100%] sm:basis-[50%] lg:basis-[33.33%]"
-                >
-                  <div className="p-4 sm:p-6">
-                    <Card>
-                      <CardContent className="flex aspect-[16/9] items-center justify-center overflow-hidden bg-black">
-                        <img
-                          src={images[index % images.length]} // Cycle through images
-                          alt={`Carousel item ${index + 1}`}
-                          className="w-full h-full object-contain rounded-xl"
-                        />
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="text-4xl md:text-5xl" />
-            <CarouselNext className="text-4xl md:text-5xl" />
-          </ShadCarousel>
-        </div>
+export function GridEve() {
+  return (<>
+      <div className="max-w-7xl relative mx-auto py-24 px-4 w-full left-0 top-0">
+        <h1 className="text-4xl lg:text-5xl md:text-6xl font-bold dark:text-[#52e500]">
+Proof Of Work        </h1>
       </div>
-    </>
+    <BentoGrid className="max-w-7xl mx-auto mb-28">
+      {items.map((item, i) => (
+        <BentoGridItem
+          key={i}
+          title={item.title}
+          description={item.description}
+          header={item.header}
+          icon={item.icon}
+          className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+        />
+      ))}
+    </BentoGrid>
+      </>
   );
 }
+const Skeleton = () => (
+  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
+);
+const items = [
+  {
+    title: "The Dawn of Innovation",
+    description: "Explore the birth of groundbreaking ideas and inventions.",
+    header: <Skeleton />,
+    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "The Digital Revolution",
+    description: "Dive into the transformative power of technology.",
+    header: <Skeleton />,
+    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "The Art of Design",
+    description: "Discover the beauty of thoughtful and functional design.",
+    header: <Skeleton />,
+    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "The Power of Communication",
+    description:
+      "Understand the impact of effective communication in our lives.",
+    header: <Skeleton />,
+    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "The Pursuit of Knowledge",
+    description: "Join the quest for understanding and enlightenment.",
+    header: <Skeleton />,
+    icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "The Joy of Creation",
+    description: "Experience the thrill of bringing ideas to life.",
+    header: <Skeleton />,
+    icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "The Spirit of Adventure",
+    description: "Embark on exciting journeys and thrilling discoveries.",
+    header: <Skeleton />,
+    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+  },
+];

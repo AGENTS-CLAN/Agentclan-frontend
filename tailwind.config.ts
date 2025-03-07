@@ -63,16 +63,17 @@ export default {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
-  		keyframes: {spotlight: {
-			"0%": {
-			  opacity: '0',
-			  transform: "translate(-72%, -62%) scale(0.5)",
-			},
-			"100%": {
-			  opacity: '1',
-			  transform: "translate(-50%,-40%) scale(1)",
-			},
-		  },
+  		keyframes: {
+  			spotlight: {
+  				'0%': {
+  					opacity: '0',
+  					transform: 'translate(-72%, -62%) scale(0.5)'
+  				},
+  				'100%': {
+  					opacity: '1',
+  					transform: 'translate(-50%,-40%) scale(1)'
+  				}
+  			},
   			'aurora-border': {
   				'0%, 100%': {
   					borderRadius: '37% 29% 27% 27% / 28% 25% 41% 37%'
@@ -201,8 +202,8 @@ export default {
   			'shimmer-slide': 'shimmer-slide var(--speed) ease-in-out infinite alternate',
   			'spin-around': 'spin-around calc(var(--speed) * 2) infinite linear',
   			rippling: 'rippling var(--duration) ease-out',
-  			marquee: 'marquee var(--duration) infinite linear',        spotlight: "spotlight 2s ease .75s 1 forwards",
-
+  			marquee: 'marquee var(--duration) infinite linear',
+  			spotlight: 'spotlight 2s ease .75s 1 forwards',
   			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite'
   		}
   	}
